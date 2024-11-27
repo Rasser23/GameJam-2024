@@ -10,8 +10,9 @@ public class PlayerMovements : MonoBehaviour
     private Rigidbody2D myBody;
 
     private Animator myAnimator;
-    
+
     [SerializeField] private int speed = 2; // Hastigheden som myBody skal bevæge sig i 
+
     
     private void Awake()
     {
@@ -40,6 +41,7 @@ public class PlayerMovements : MonoBehaviour
     private void Update()
     {
         myBody.linearVelocity = movement * speed;
+
     }
     
     
