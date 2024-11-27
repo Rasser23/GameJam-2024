@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 188e376f72b8d7c41826e56d33d43e9f
+guid: 13afa853a1b71ea42b860fcb2c959e43
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6215267202064938543
-    second: Tree1_0
+      213: 6051006508310428851
+    second: Kopi af Fire_ball_0
+  - first:
+      213: 5307424980317654689
+    second: Kopi af Fire_ball_1
+  - first:
+      213: 539039337199886527
+    second: Kopi af Fire_ball_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tree1_0
+      name: Kopi af Fire_ball_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 1
-        width: 80
-        height: 102
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2677332790114650800000000000000
-      internalID: 6215267202064938543
+      spriteID: 3bc7b651c5e79f350800000000000000
+      internalID: 6051006508310428851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kopi af Fire_ball_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae4edf46e2c7a940800000000000000
+      internalID: 5307424980317654689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kopi af Fire_ball_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb0e2c5db6d0b7700800000000000000
+      internalID: 539039337199886527
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8c5c5f3e9ad17e94e915261660b7fb54
+    spriteID: 9dd1c36d0595cbf4e967a1008c99e59a
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tree1_0: 6215267202064938543
+      Kopi af Fire_ball_0: 6051006508310428851
+      Kopi af Fire_ball_1: 5307424980317654689
+      Kopi af Fire_ball_2: 539039337199886527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
