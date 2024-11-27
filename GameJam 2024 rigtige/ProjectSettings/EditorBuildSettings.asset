@@ -8,4 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/RightExit.unity
+    guid: e654973ba1650174d8686f665278cdb8
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
