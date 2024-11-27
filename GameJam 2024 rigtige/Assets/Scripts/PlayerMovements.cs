@@ -11,7 +11,7 @@ public class PlayerMovements : MonoBehaviour
 
     private Animator myAnimator;
     
-    [SerializeField] private int speed = 2; // Hastigheden som myBody skal bevæge sig i 
+    [SerializeField] private int speed = 5; // Hastigheden som myBody skal bevæge sig i 
     
     private void Awake()
     {
@@ -39,7 +39,7 @@ public class PlayerMovements : MonoBehaviour
 
     private void Update()
     {
-        myBody.linearVelocity = movement * speed;
+        myBody.linearVelocity = movement * speed * Time.deltaTime * 300;
     }
     
     
