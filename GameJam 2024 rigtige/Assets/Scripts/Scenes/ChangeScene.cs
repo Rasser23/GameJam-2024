@@ -10,7 +10,7 @@ public class ChangeScene : MonoBehaviour
     {
         if (collision.CompareTag("Player")) // Check if the player triggered the exit
         {
-            // Save the new spawn position for the target scene
+            // Save the new spawn position for the next scene
             if (SceneTransitionManager.Instance != null)
             {
                 SceneTransitionManager.Instance.SetSpawnPosition(newSpawnPosition);

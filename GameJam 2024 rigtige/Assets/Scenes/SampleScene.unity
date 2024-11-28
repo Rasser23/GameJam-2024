@@ -5308,7 +5308,6 @@ GameObject:
   - component: {fileID: 695674690}
   - component: {fileID: 695674689}
   - component: {fileID: 695674691}
-  - component: {fileID: 695674692}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5328,7 +5327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e4ae579c91549e478101319b9512712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPosition: {x: 2.691, y: 1.906, z: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &695674690
 Transform:
   m_ObjectHideFlags: 0
@@ -5359,19 +5358,6 @@ MonoBehaviour:
   dialogueUI: {fileID: 1872368763}
   npcNameText: {fileID: 503248077}
   dialogueText: {fileID: 600618798}
---- !u!114 &695674692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695674688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8878b09188d693499ca82b872236834, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 0}
 --- !u!1 &696139703
 GameObject:
   m_ObjectHideFlags: 0
