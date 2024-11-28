@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Kopi af llama_0: -5451070541171041449
+      Kopi af llama_1: 1137217220888102435
+      Kopi af llama_2: 1819255535391460806
+      Kopi af llama_3: 2689979009523043132
+      Kopi af llama_4: -5940402369266578750
+      Kopi af llama_5: 1780149359982421528
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
