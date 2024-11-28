@@ -4,7 +4,7 @@ public class Fireball : MonoBehaviour
 {
     public Vector2 fireDirection;
     private Rigidbody2D rigidbody;
-    private float moveSpeed;
+    public float moveSpeed;
     private float timeExistet = 0f;
     private HPmanager hpManager; // Reference to HPmanager
 
@@ -38,6 +38,8 @@ public class Fireball : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Fireball hit the player");
+
             if (hpManager != null)
             {
                 hpManager.TakeDamage(1); // Reduce health by 1
