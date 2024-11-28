@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -7,6 +8,10 @@ public class HealthManager : MonoBehaviour
     private Image heartImage;     // UI Image component for the heart
     private int currentHealth;    // Tracks the player's current health
     public int maxHealth = 6;     // Maximum health (6 hearts in this case)
+
+    [Header("Game Over UI")]
+    public GameObject gameOverScreen; // Reference to the Game Over screen
+    public Button resetButton;        // Reference to the reset button
 
     void Start()
     {
@@ -21,6 +26,18 @@ public class HealthManager : MonoBehaviour
         {
             heartImage.sprite = heartSprites[0];
         }
+
+        // Hide the Game Over screen initially
+        if (gameOverScreen != null)
+        {
+            gameOverScreen.SetActive(false);
+        }
+
+        // Add listener to reset button
+        if (resetButton != null)
+        {
+            resetButton.onClick.AddListener(RestartGame);
+        }
     }
 
     public void TakeDamage(int damage)
@@ -31,6 +48,12 @@ public class HealthManager : MonoBehaviour
 
         // Update the heart sprite
         UpdateHeartSprite();
+
+        // Check if health is 0
+        if (currentHealth == 0)
+        {
+            GameOver();
+        }
     }
 
     public void Heal(int healAmount)
@@ -55,5 +78,26 @@ public class HealthManager : MonoBehaviour
         heartImage.sprite = heartSprites[spriteIndex];
 
         Debug.Log($"Heart sprite updated. Current health: {currentHealth}, Sprite index: {spriteIndex}");
+    }
+
+    private void GameOver()
+    {
+        Debug.Log("Game Over!");
+
+        // Show the Game Over screen
+        if (gameOverScreen != null)
+        {
+            gameOverScreen.SetActive(true);
+        }
+
+        // Stop player movement or any other gameplay mechanics here if necessary
+        Time.timeScale = 0f; // Pause the game
+    }
+
+    private void RestartGame()
+    {
+        // Restart the game by reloading the current scene
+        Time.timeScale = 1f; // Resume the game
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
