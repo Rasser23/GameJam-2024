@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RightExitScript : MonoBehaviour
+public class ChangeSceneScript : MonoBehaviour
 {
     public string targetScene; // Name of the scene to load
     public Vector3 newSpawnPosition; // Position in the new scene where the player will appear
