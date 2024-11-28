@@ -1,41 +1,52 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
 public class Fireball : MonoBehaviour
 {
     public Vector2 fireDirection;
-    Rigidbody2D rigidbody;
-    float moveSpeed;
-    float timeExistet = 0f;
+    private Rigidbody2D rigidbody;
+    private float moveSpeed;
+    private float timeExistet = 0f;
+    public HPmanager hpManager; // Reference to HPmanager
+
     void Start()
     {
         moveSpeed = 200f;
         rigidbody = this.gameObject.GetComponent<Rigidbody2D>();
+
+        // Optionally, find HPmanager if not assigned in the Inspector
+        if (hpManager == null)
+        {
+            hpManager = FindObjectOfType<HPmanager>();
+        }
     }
 
     void Update()
     {
-        rigidbody.linearVelocity = fireDirection * moveSpeed * Time.deltaTime;
+        rigidbody.velocity = fireDirection * moveSpeed * Time.deltaTime;
         timeExistet += Time.deltaTime;
         if (timeExistet > 4f)
         {
             DestroyObj();
         }
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player") 
+        if (other.CompareTag("Player"))
         {
-
-            PlayerMovements pM = other.gameObject.GetComponent<PlayerMovements>();
-            if (pM != null)
+            if (hpManager != null)
             {
-                //pM.TakeDamage();... something
-                DestroyObj();
+                Debug.Log("FIIIIRREEEE");
+                hpManager.TakeDamage(1); // Reduce health by 1
+                DestroyObj(); // Destroy the fireball
+            }
+            else
+            {
+                Debug.LogError("HPmanager is not assigned!");
             }
         }
     }
+
     public void DestroyObj()
     {
         Destroy(gameObject);

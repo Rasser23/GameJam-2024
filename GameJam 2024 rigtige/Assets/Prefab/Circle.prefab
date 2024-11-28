@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireDirection: {x: 0, y: 0}
+  hpManager: {fileID: 0}
 --- !u!58 &566738056669386196
 CircleCollider2D:
   m_ObjectHideFlags: 0
