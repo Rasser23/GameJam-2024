@@ -3378,6 +3378,8 @@ MonoBehaviour:
   - {fileID: 4160753575623616581, guid: b17bee984e79baf41b704154bdcdf1a9, type: 3}
   - {fileID: 366615594880959974, guid: b17bee984e79baf41b704154bdcdf1a9, type: 3}
   - {fileID: -35186699611894704, guid: b17bee984e79baf41b704154bdcdf1a9, type: 3}
+  heartImage: {fileID: 0}
+  currentHealth: 0
   maxHealth: 6
 --- !u!1 &468444667
 GameObject:
@@ -7376,13 +7378,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 833ebeb218ccb0846b2de9ec3b095631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  moveSpeed: 1
+  health: 1
+  moveSpeed: 2
   detectionRadius: 5
   minimumDistance: 1.5
   firePoint: {fileID: 598418869594840961}
   fireballPrefab: {fileID: 1482139918964046067, guid: 55abc851fec4f8c4a93524b7f7bea9a8, type: 3}
   fireRate: 2
+  health: 0
 --- !u!212 &1025721630
 SpriteRenderer:
   m_ObjectHideFlags: 0
