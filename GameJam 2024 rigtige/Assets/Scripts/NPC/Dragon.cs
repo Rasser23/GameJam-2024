@@ -13,12 +13,9 @@ public class DragonBehavior : Enemy
     private bool movingRight = true; // Direction of movement
     private float nextFireTime = 0f; // Time until the dragon can fire again
 
-    private Animator animator; //Rasmine
-
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player"); // Assumes the player is tagged "Player"
-        animator = GetComponent<Animator>(); // Rasmine
         health = 10f;
     }
 
@@ -85,7 +82,6 @@ public class DragonBehavior : Enemy
         transform.localScale = new Vector3(movingRight ? 1 : -1, 1, 1);
     }
 
-
     private void FireAtPlayer()
     {
         // Fire a fireball if the cooldown has elapsed
@@ -103,8 +99,6 @@ public class DragonBehavior : Enemy
             Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
             rb.linearVelocity = fireDirection * moveSpeed;
              */
-
-             animator.SetTrigger("Fireball");
         }
     }
 
