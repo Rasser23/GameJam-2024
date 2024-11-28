@@ -11,7 +11,7 @@ public class Lama : Enemy
     float damageSpeed;
     bool hittingPlayer = false;
     float hitTimer = 2f;
-    void Start()
+     public override void OnStart()
     {
         moveSpeed = 300;
         health = 1;
@@ -37,6 +37,7 @@ public class Lama : Enemy
         if (hittingPlayer && hitTimer >= damageSpeed)
         {
             hitTimer = 0f;
+            GiveDamage(1);
             Debug.Log("gives damage");
         }
         else if (hitTimer < damageSpeed)
