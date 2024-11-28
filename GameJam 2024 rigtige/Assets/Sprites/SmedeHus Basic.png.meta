@@ -133,6 +133,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -347,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SmedeHus Basic_0: 292557422384187872
+      SmedeHus Basic_1: 1279000303664909719
+      SmedeHus Basic_2: -636873054628841677
+      SmedeHus Basic_3: 8111760730078637626
+      SmedeHus Basic_4: 2902160309414128508
+      SmedeHus Basic_5: 5663024955578631747
+      SmedeHus Basic_6: -6329951097408087014
+      SmedeHus Basic_7: 8291381278471371149
+      SmedeHus Basic_8: 4412040032742611202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

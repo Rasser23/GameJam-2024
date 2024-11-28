@@ -94,7 +94,7 @@ public class DragonBehavior : MonoBehaviour
 
             // Assuming the fireball has a Rigidbody2D for movement
             Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
-            rb.velocity = fireDirection * moveSpeed;
+            rb.linearVelocity = fireDirection * moveSpeed;
 
             Debug.Log("Fireball launched!");
         }
