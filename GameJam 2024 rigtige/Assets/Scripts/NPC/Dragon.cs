@@ -16,7 +16,7 @@ public class DragonBehavior : Enemy
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player"); // Assumes the player is tagged "Player"
-        health = 10f;
+        health = 10;
 
     }
 
