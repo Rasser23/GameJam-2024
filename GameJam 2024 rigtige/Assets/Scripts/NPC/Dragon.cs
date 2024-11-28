@@ -98,11 +98,7 @@ public class DragonBehavior : Enemy
             Vector2 fireDirection = (player.transform.position - this.transform.position).normalized;
         
             fireball.GetComponent<Fireball>().fireDirection = fireDirection;
-            /*
-            // Assuming the fireball has a Rigidbody2D for movement
-            Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
-            rb.linearVelocity = fireDirection * moveSpeed;
-             */
+           
 
              animator.SetTrigger("Fireball");
         }
