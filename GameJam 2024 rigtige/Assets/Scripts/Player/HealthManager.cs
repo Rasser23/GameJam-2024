@@ -4,14 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
-    public Sprite[] heartSprites; // Array of heart sprites (each representing a health stage)
-    private Image heartImage;     // UI Image component for the heart
-    private int currentHealth;    // Tracks the player's current health
-    public int maxHealth = 6;     // Maximum health (6 hearts in this case)
+    public Sprite[] heartSprites; // Array of heart sprites
+    private Image heartImage;
+    private int currentHealth;
+    public int maxHealth = 6;
 
     [Header("Game Over UI")]
     public GameObject gameOverScreen; // Reference to the Game Over screen
     public Button resetButton;        // Reference to the reset button
+
+    private PlayerMovements playerMovements; // Reference to the player's movement script
 
     void Start()
     {
@@ -27,16 +29,23 @@ public class HealthManager : MonoBehaviour
             heartImage.sprite = heartSprites[0];
         }
 
-        // Hide the Game Over screen initially
+        // Hide the Game Over screen and reset button initially
         if (gameOverScreen != null)
         {
             gameOverScreen.SetActive(false);
         }
 
-        // Add listener to reset button
         if (resetButton != null)
         {
+            resetButton.gameObject.SetActive(false);
             resetButton.onClick.AddListener(RestartGame);
+        }
+
+        // Find the player's movement script
+        playerMovements = FindObjectOfType<PlayerMovements>();
+        if (playerMovements == null)
+        {
+            Debug.LogError("PlayerMovements script not found in the scene!");
         }
     }
 
@@ -44,7 +53,6 @@ public class HealthManager : MonoBehaviour
     {
         // Reduce health but not below 0
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, maxHealth);
-        Debug.Log($"Player took {damage} damage. Current health: {currentHealth}");
 
         // Update the heart sprite
         UpdateHeartSprite();
@@ -56,48 +64,66 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    public void Heal(int healAmount)
-    {
-        // Increase health but not above maxHealth
-        currentHealth = Mathf.Clamp(currentHealth + healAmount, 0, maxHealth);
-        Debug.Log($"Player healed {healAmount}. Current health: {currentHealth}");
-
-        // Update the heart sprite
-        UpdateHeartSprite();
-    }
-
     private void UpdateHeartSprite()
     {
-        // Calculate the sprite index based on the current health
+        // Update UI sprite logic
         int spriteIndex = maxHealth - currentHealth;
-
-        // Clamp the sprite index to ensure it stays within bounds
         spriteIndex = Mathf.Clamp(spriteIndex, 0, heartSprites.Length - 1);
-
-        // Update the heart sprite
         heartImage.sprite = heartSprites[spriteIndex];
-
-        Debug.Log($"Heart sprite updated. Current health: {currentHealth}, Sprite index: {spriteIndex}");
     }
 
     private void GameOver()
     {
         Debug.Log("Game Over!");
 
-        // Show the Game Over screen
+        // Show the Game Over screen and reset button
         if (gameOverScreen != null)
         {
             gameOverScreen.SetActive(true);
         }
 
-        // Stop player movement or any other gameplay mechanics here if necessary
-        Time.timeScale = 0f; // Pause the game
+        if (resetButton != null)
+        {
+            resetButton.gameObject.SetActive(true);
+        }
+
+        // Stop the game
+        Time.timeScale = 0f;
     }
 
     private void RestartGame()
     {
-        // Restart the game by reloading the current scene
-        Time.timeScale = 1f; // Resume the game
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("Restarting Game...");
+
+        // Hide Game Over screen and reset button
+        if (gameOverScreen != null)
+        {
+            gameOverScreen.SetActive(false);
+        }
+
+        if (resetButton != null)
+        {
+            resetButton.gameObject.SetActive(false);
+        }
+
+        // Reset time scale
+        Time.timeScale = 1f;
+
+        // Reset player position and state
+        if (playerMovements != null)
+        {
+            playerMovements.ResetPosition(); // Ensure this is called
+        }
+
+        // Reset health
+        currentHealth = maxHealth;
+        UpdateHeartSprite();
+
+        // Load the desired starting scene 
+        string startingScene = "SampleScene"; 
+        SceneManager.LoadScene(startingScene);
+
+        Debug.Log("Game Reset Complete");
     }
+
 }

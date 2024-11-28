@@ -16,12 +16,12 @@ public class SceneTransitionManager : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // Prevent duplicate instances
         }
     }
 
     public void SetSpawnPosition(Vector3 position)
     {
-        spawnPosition = position;
+        spawnPosition = position; // Update the spawn position for the next scene
     }
 }
