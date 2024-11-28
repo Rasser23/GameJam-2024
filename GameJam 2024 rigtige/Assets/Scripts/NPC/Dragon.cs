@@ -12,11 +12,14 @@ public class DragonBehavior : Enemy
     private GameObject player; // Reference to the player
     private bool movingRight = true; // Direction of movement
     private float nextFireTime = 0f; // Time until the dragon can fire again
+    public float health;
+    private Animator animator; //Rasmine
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player"); // Assumes the player is tagged "Player"
-        health = 10;
+        animator = GetComponent<Animator>(); // Rasmine
+        health = 10f;
     }
 
     public override void OnUpdate()
@@ -82,6 +85,7 @@ public class DragonBehavior : Enemy
         transform.localScale = new Vector3(movingRight ? 1 : -1, 1, 1);
     }
 
+
     private void FireAtPlayer()
     {
         // Fire a fireball if the cooldown has elapsed
@@ -99,6 +103,8 @@ public class DragonBehavior : Enemy
             Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
             rb.linearVelocity = fireDirection * moveSpeed;
              */
+
+             animator.SetTrigger("Fireball");
         }
     }
 
@@ -110,57 +116,4 @@ public class DragonBehavior : Enemy
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, minimumDistance);
     }
-
-public class DragonAnimation : MonoBehaviour
-{
-
-
-private Animator animator;
-private Rigidbody2D rb;
-private Vector2 moveDirection;
-
-void Start()
-{
-    animator = GetComponent<Animator>();
-    rb = GetComponent<Rigidbody2D>();
-
-    if (animator == null)
-    {
-        Debug.LogError("Animator er ikke tilknyttet til gameobject");
-    }
-}
-
-void Update()
-
-{
-    float moveX = Input.GetAxis("Horizontal");
-    float moveY = Input.GetAxis("Vertical");
-
-    moveDirection = new Vector2(moveX, moveY).normalized;
-
-    Debug.Log("MoveDirection: " + moveDirection);
-
-    if (moveDirection.magnitude > 0.1f)
-
-    {
-        animator.SetBool("isMoving", true);
-
-    }
-else 
-
-    {
-        animator.SetBool("isMoving", false);
-    }
-}
-
-void FixedUpdate()
-
-{
-    rb.MovePosition(rb.position + moveDirection * 5f * Time.fixedDeltaTime);
-}
-
-
-
-}
-
 }

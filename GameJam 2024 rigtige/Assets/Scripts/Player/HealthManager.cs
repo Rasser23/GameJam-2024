@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HeartAnim : MonoBehaviour
+public class HealthManager : MonoBehaviour
 {
     public Sprite[] heartSprites; // Array of heart sprites (each representing a health stage)
     private Image heartImage;     // UI Image component for the heart

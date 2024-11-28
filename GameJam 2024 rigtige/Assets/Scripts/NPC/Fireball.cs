@@ -6,17 +6,21 @@ public class Fireball : MonoBehaviour
     private Rigidbody2D rigidbody;
     private float moveSpeed;
     private float timeExistet = 0f;
-    public HPmanager hpManager; // Reference to HPmanager
+    private HPmanager hpManager; // Reference to HPmanager
 
     void Start()
     {
         moveSpeed = 200f;
         rigidbody = this.gameObject.GetComponent<Rigidbody2D>();
 
-        // Optionally, find HPmanager if not assigned in the Inspector
+        // Find HPmanager in the scene
         if (hpManager == null)
         {
             hpManager = FindObjectOfType<HPmanager>();
+            if (hpManager == null)
+            {
+                Debug.LogError("HPmanager could not be found in the scene!");
+            }
         }
     }
 
@@ -36,7 +40,6 @@ public class Fireball : MonoBehaviour
         {
             if (hpManager != null)
             {
-                Debug.Log("FIIIIRREEEE");
                 hpManager.TakeDamage(1); // Reduce health by 1
                 DestroyObj(); // Destroy the fireball
             }
