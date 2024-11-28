@@ -9,6 +9,8 @@ public class PlayerMovements : MonoBehaviour
     private Rigidbody2D myBody;
     private Animator myAnimator;
     public Sword sword;
+    public int lvl = 0;
+    private bool movingRight = false;
 
     [SerializeField] private float speed = 2f; // Movement speed
 
@@ -47,5 +49,14 @@ public class PlayerMovements : MonoBehaviour
         {
             sword.GiveDamage();
         }
+        if (lvl!=myAnimator.GetInteger("lvl") )
+        {
+            myAnimator.SetInteger("lvl", lvl);
+        }
+        if (lvl > 0 && (((movement.x > 0) && movingRight )||( (movement.x < 0) && !movingRight)))
+            {
+                movingRight = !movingRight; // Flip direction
+                gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
+            }
     }
 }

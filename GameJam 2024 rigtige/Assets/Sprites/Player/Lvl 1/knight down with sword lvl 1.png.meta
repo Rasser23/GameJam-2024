@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: da9dbdc36ad3b481bbb78a837dbcf9c5
+guid: 68a054fce061056448db37ee44644b82
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6717563718550986691
-    second: Kopi af Knight_right_0
+      213: 3848944832179369178
+    second: knight down with sword lvl 1_0
   - first:
-      213: 8146211228755155045
-    second: Kopi af Knight_right_1
+      213: 5732539519341632700
+    second: knight down with sword lvl 1_1
   - first:
-      213: 7014967213599830266
-    second: Kopi af Knight_right_2
+      213: 3252486538994460194
+    second: knight down with sword lvl 1_2
   - first:
-      213: 3042818381462833535
-    second: Kopi af Knight_right_3
+      213: -4460315095522597387
+    second: knight down with sword lvl 1_3
   - first:
-      213: -5265234027220203037
-    second: Kopi af Knight_right_4
-  - first:
-      213: -5807463238818014809
-    second: Kopi af Knight_right_5
+      213: 5959309691280347887
+    second: knight down with sword lvl 1_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,43 +108,61 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kopi af Knight_right_0
+      name: knight down with sword lvl 1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 20
+        y: 277
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4702aaee23a6530800000000000000
+      internalID: 3848944832179369178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight down with sword lvl 1_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 214
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc1f3f02521e8f40800000000000000
+      internalID: 5732539519341632700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight down with sword lvl 1_2
+      rect:
+        serializedVersion: 2
+        x: 24
         y: 150
-        width: 30
-        height: 30
+        width: 20
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3067bf936b66c2a0800000000000000
-      internalID: -6717563718550986691
+      spriteID: 22621895647232d20800000000000000
+      internalID: 3252486538994460194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kopi af Knight_right_1
+      name: knight down with sword lvl 1_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 120
-        width: 30
-        height: 30
+        x: 20
+        y: 85
+        width: 23
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 568df3bb3f72d0170800000000000000
-      internalID: 8146211228755155045
+      spriteID: 5f520196d07c912c0800000000000000
+      internalID: -4460315095522597387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kopi af Knight_right_2
+      name: knight down with sword lvl 1_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 90
-        width: 30
-        height: 30
+        x: 18
+        y: 23
+        width: 23
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,74 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af031ad838b2a5160800000000000000
-      internalID: 7014967213599830266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kopi af Knight_right_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 60
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f790f1742334a3a20800000000000000
-      internalID: 3042818381462833535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kopi af Knight_right_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 30
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e98d347c812ee6b0800000000000000
-      internalID: -5265234027220203037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kopi af Knight_right_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a9dc1c14feb76fa0800000000000000
-      internalID: -5807463238818014809
+      spriteID: fe2de472798b3b250800000000000000
+      internalID: 5959309691280347887
       vertices: []
       indices: 
       edges: []
@@ -276,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3613659c7d236474f99e2a25a1424580
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Kopi af Knight_right_0: -6717563718550986691
-      Kopi af Knight_right_1: 8146211228755155045
-      Kopi af Knight_right_2: 7014967213599830266
-      Kopi af Knight_right_3: 3042818381462833535
-      Kopi af Knight_right_4: -5265234027220203037
-      Kopi af Knight_right_5: -5807463238818014809
+      knight down with sword lvl 1_0: 3848944832179369178
+      knight down with sword lvl 1_1: 5732539519341632700
+      knight down with sword lvl 1_2: 3252486538994460194
+      knight down with sword lvl 1_3: -4460315095522597387
+      knight down with sword lvl 1_4: 5959309691280347887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: da9dbdc36ad3b481bbb78a837dbcf9c5
+guid: 23e97c1dd50b0fb4ca8bec4bae03115b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6717563718550986691
-    second: Kopi af Knight_right_0
+      213: -9094760876028347020
+    second: Knight right with sword lvl 1 spritesheet_0
   - first:
-      213: 8146211228755155045
-    second: Kopi af Knight_right_1
+      213: 7779350186633463696
+    second: Knight right with sword lvl 1 spritesheet_1
   - first:
-      213: 7014967213599830266
-    second: Kopi af Knight_right_2
+      213: 8769611370329104309
+    second: Knight right with sword lvl 1 spritesheet_2
   - first:
-      213: 3042818381462833535
-    second: Kopi af Knight_right_3
+      213: -6653266058695597662
+    second: Knight right with sword lvl 1 spritesheet_3
   - first:
-      213: -5265234027220203037
-    second: Kopi af Knight_right_4
+      213: -2682825840305478870
+    second: Knight right with sword lvl 1 spritesheet_4
   - first:
-      213: -5807463238818014809
-    second: Kopi af Knight_right_5
+      213: 6205370083695062817
+    second: Knight right with sword lvl 1 spritesheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,163 +111,137 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kopi af Knight_right_0
+      name: Knight right with sword lvl 1 spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 150
-        width: 30
-        height: 30
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d3067bf936b66c2a0800000000000000
-      internalID: -6717563718550986691
+      spriteID: cb900e2cfcb09c14d803b16cebc4d03b
+      internalID: -1798506788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kopi af Knight_right_1
+      name: Knight right with sword lvl 1 spritesheet_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 120
-        width: 30
-        height: 30
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 568df3bb3f72d0170800000000000000
-      internalID: 8146211228755155045
+      spriteID: 4b79015c5335f1745b6379d670810dd8
+      internalID: 425405647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kopi af Knight_right_2
+      name: Knight right with sword lvl 1 spritesheet_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 90
-        width: 30
-        height: 30
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: af031ad838b2a5160800000000000000
-      internalID: 7014967213599830266
+      spriteID: 8ad72fd2f66dd814bb944611018d35e5
+      internalID: 441387664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kopi af Knight_right_3
+      name: Knight right with sword lvl 1 spritesheet_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 60
-        width: 30
-        height: 30
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f790f1742334a3a20800000000000000
-      internalID: 3042818381462833535
+      spriteID: b92315a779ba1d34392ab65ec0c5510b
+      internalID: 708281075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kopi af Knight_right_4
+      name: Knight right with sword lvl 1 spritesheet_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 30
-        width: 30
-        height: 30
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3e98d347c812ee6b0800000000000000
-      internalID: -5265234027220203037
+      spriteID: c68ec6db119597e4893715b540796834
+      internalID: 948794329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kopi af Knight_right_5
+      name: Knight right with sword lvl 1 spritesheet_5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 30
-        height: 30
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7a9dc1c14feb76fa0800000000000000
-      internalID: -5807463238818014809
+      spriteID: 0f66cf3caad0c0647881c8695750aa39
+      internalID: -2027504220
       vertices: []
       indices: 
       edges: []
@@ -276,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3613659c7d236474f99e2a25a1424580
+    spriteID: 6781f40591a1d3046b346f06cc6be154
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Kopi af Knight_right_0: -6717563718550986691
-      Kopi af Knight_right_1: 8146211228755155045
-      Kopi af Knight_right_2: 7014967213599830266
-      Kopi af Knight_right_3: 3042818381462833535
-      Kopi af Knight_right_4: -5265234027220203037
-      Kopi af Knight_right_5: -5807463238818014809
+      Knight right with sword lvl 1 spritesheet_0: -1798506788
+      Knight right with sword lvl 1 spritesheet_1: 425405647
+      Knight right with sword lvl 1 spritesheet_2: 441387664
+      Knight right with sword lvl 1 spritesheet_3: 708281075
+      Knight right with sword lvl 1 spritesheet_4: 948794329
+      Knight right with sword lvl 1 spritesheet_5: -2027504220
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
