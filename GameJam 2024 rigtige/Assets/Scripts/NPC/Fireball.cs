@@ -23,7 +23,7 @@ public class Fireball : MonoBehaviour
 
     void Update()
     {
-        rigidbody.velocity = fireDirection * moveSpeed * Time.deltaTime;
+        rigidbody.linearVelocity = fireDirection * moveSpeed * Time.deltaTime;
         timeExistet += Time.deltaTime;
         if (timeExistet > 4f)
         {
