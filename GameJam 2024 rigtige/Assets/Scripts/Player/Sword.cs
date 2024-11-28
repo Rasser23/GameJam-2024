@@ -3,14 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 public class Sword : MonoBehaviour
 {
-    int damage;
+    public int damage;
     List<Enemy> enemysList = new List<Enemy>();
     public float angle;
 
     public Animator animator;
     void Start()
     {
-        damage = -1;
     }
 
     void Update()
