@@ -7,13 +7,14 @@ public class Fireball : MonoBehaviour
     private float moveSpeed;
     private float timeExistet = 0f;
     private HealthManager healthManager; // Reference to HPmanager
-
+    float angle;
     void Start()
     {
         moveSpeed = 200f;
         rigidbody = this.gameObject.GetComponent<Rigidbody2D>();
-
-         // Find HealthManager in the scene
+        angle = Vector2.Angle(fireDirection,new Vector2(1,0));
+        transform.eulerAngles = new Vector3(0, 0, angle-90);
+        // Find HealthManager in the scene
         healthManager = FindObjectOfType<HealthManager>();
         if (healthManager == null)
         {
