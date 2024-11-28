@@ -28,6 +28,7 @@ void Update()
 
     moveDirection = new Vector2(moveX, moveY).normalized;
 
+   // Debug.Log("MoveDirection: " + moveDirection);
 
     if (moveDirection.magnitude > stopTreshold)
 

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 public class Sword : MonoBehaviour
 {
-    int damage;
+    float damage;
     List<Enemy> enemysList = new List<Enemy>();
     public float angle;
 

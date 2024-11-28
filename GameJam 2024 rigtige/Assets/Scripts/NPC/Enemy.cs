@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health;
+    public float health;
     public virtual void OnUpdate() { }
     void Update()
     {
@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
         }
 
     }
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         health += damage;
     }
