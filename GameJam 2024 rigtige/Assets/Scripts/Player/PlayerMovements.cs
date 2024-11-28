@@ -14,6 +14,9 @@ public class PlayerMovements : MonoBehaviour
 
     [SerializeField] private float speed = 2f; // Movement speed
 
+    private Vector3 startingPosition; // Player's starting position
+    public static PlayerMovements Instance; // Singleton instance
+
     private void Awake()
     {
         sword.damage = -lvl;
@@ -22,6 +25,20 @@ public class PlayerMovements : MonoBehaviour
         myBody.interpolation = RigidbodyInterpolation2D.Interpolate; // Smooth movement
         myBody.collisionDetectionMode = CollisionDetectionMode2D.Continuous; // Prevent tunneling
         DontDestroyOnLoad(gameObject); // Prevents this object from being destroyed when loading a new scene
+
+        // Save the player's starting position
+        startingPosition = transform.position;
+
+
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Persist the player across scenes
+        }
+        else
+        {
+            Destroy(gameObject); // Destroy duplicate player objects
+        }
     }
 
     private void OnMovement(InputValue value)
@@ -44,6 +61,8 @@ public class PlayerMovements : MonoBehaviour
     {
         myBody.linearVelocity = movement * speed; // Apply movement
     }
+
+
     void Update()
     {
         if (Input.GetKeyDown("space"))
@@ -69,5 +88,13 @@ public class PlayerMovements : MonoBehaviour
             lvl = 1;
         }
     }
-   
+
+
+    public void ResetPosition()
+    {
+        // Reset the player's position and stop movement
+        transform.position = startingPosition;
+        movement = Vector2.zero;
+        myAnimator.SetBool("isWalking", false); // Reset animation state
+    }
 }
