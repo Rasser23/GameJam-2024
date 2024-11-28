@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DragonBehavior : MonoBehaviour
+public class DragonBehavior : Enemy
 {
     [SerializeField] private float moveSpeed = 2f; // Speed of movement
     [SerializeField] private float detectionRadius = 5f; // Maximum detection radius
@@ -16,9 +16,10 @@ public class DragonBehavior : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player"); // Assumes the player is tagged "Player"
+        health = 10f;
     }
 
-    private void Update()
+    public override void OnUpdate()
     {
         if (player == null) return;
 
@@ -94,7 +95,7 @@ public class DragonBehavior : MonoBehaviour
 
             // Assuming the fireball has a Rigidbody2D for movement
             Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
-            rb.velocity = fireDirection * moveSpeed;
+            rb.linearVelocity = fireDirection * moveSpeed;
 
             Debug.Log("Fireball launched!");
         }
