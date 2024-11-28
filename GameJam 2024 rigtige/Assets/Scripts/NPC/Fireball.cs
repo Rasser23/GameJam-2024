@@ -7,13 +7,14 @@ public class Fireball : MonoBehaviour
     private float moveSpeed;
     private float timeExistet = 0f;
     private HealthManager healthManager; // Reference to HPmanager
-
+    float angle;
     void Start()
     {
         moveSpeed = 200f;
         rigidbody = this.gameObject.GetComponent<Rigidbody2D>();
-
-         // Find HealthManager in the scene
+        angle = GetAngleFromVector2(fireDirection);
+        transform.eulerAngles = new Vector3(0, 0, angle);
+        // Find HealthManager in the scene
         healthManager = FindObjectOfType<HealthManager>();
         if (healthManager == null)
         {
@@ -50,5 +51,19 @@ public class Fireball : MonoBehaviour
     public void DestroyObj()
     {
         Destroy(gameObject);
+    }
+    float GetAngleFromVector2(Vector2 vector)
+    {
+        // Use Mathf.Atan2 to calculate the angle in radians
+        float angleInRadians = Mathf.Atan2(vector.y, vector.x);
+
+        // Convert radians to degrees
+        float angleInDegrees = angleInRadians * Mathf.Rad2Deg;
+
+        // Ensure the angle is positive (0 to 360 degrees)
+        if (angleInDegrees < 0)
+            angleInDegrees += 360;
+
+        return angleInDegrees;
     }
 }
