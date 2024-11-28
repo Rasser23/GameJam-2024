@@ -8,6 +8,7 @@ public class PlayerMovements : MonoBehaviour
     private Vector2 movement;
     private Rigidbody2D myBody;
     private Animator myAnimator;
+    public Sword sword;
 
     [SerializeField] private float speed = 2f; // Movement speed
 
@@ -39,5 +40,12 @@ public class PlayerMovements : MonoBehaviour
     private void FixedUpdate()
     {
         myBody.linearVelocity = movement * speed; // Apply movement
+    }
+    void Update()
+    {
+        if(Input.GetKeyDown("space"))
+        {
+            sword.GiveDamage();
+        }
     }
 }
