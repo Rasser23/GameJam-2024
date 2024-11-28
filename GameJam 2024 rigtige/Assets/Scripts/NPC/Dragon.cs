@@ -90,14 +90,15 @@ public class DragonBehavior : Enemy
             nextFireTime = Time.time + fireRate;
 
             // Instantiate fireball and set its direction
-            GameObject fireball = Instantiate(fireballPrefab, firePoint.position, Quaternion.identity);
-            Vector2 fireDirection = (player.transform.position - firePoint.position).normalized;
-
+            GameObject fireball = Instantiate(fireballPrefab, this.transform.position, Quaternion.identity);
+            Vector2 fireDirection = (player.transform.position - this.transform.position).normalized;
+        
+            fireball.GetComponent<Fireball>().fireDirection = fireDirection;
+            /*
             // Assuming the fireball has a Rigidbody2D for movement
             Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
             rb.linearVelocity = fireDirection * moveSpeed;
-
-            Debug.Log("Fireball launched!");
+             */
         }
     }
 
