@@ -20,6 +20,7 @@ public class DragonBehavior : Enemy
         player = GameObject.FindGameObjectWithTag("Player"); // Assumes the player is tagged "Player"
         animator = GetComponent<Animator>(); // Rasmine
         health = 10f;
+
     }
 
     public override void OnUpdate()
