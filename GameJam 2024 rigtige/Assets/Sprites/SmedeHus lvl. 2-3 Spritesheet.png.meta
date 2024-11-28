@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SmedeHus lvl. 2-3 Spritesheet_0: -2239312383002192067
+      SmedeHus lvl. 2-3 Spritesheet_1: -2203504790482451811
+      SmedeHus lvl. 2-3 Spritesheet_2: 9155239504043720213
+      SmedeHus lvl. 2-3 Spritesheet_3: -1393357033973265092
+      SmedeHus lvl. 2-3 Spritesheet_4: 5377401789417539565
+      SmedeHus lvl. 2-3 Spritesheet_5: -5694328205247116495
+      SmedeHus lvl. 2-3 Spritesheet_6: 6550605784874825927
+      SmedeHus lvl. 2-3 Spritesheet_7: -9205265878368662028
+      SmedeHus lvl. 2-3 Spritesheet_8: 3951148471707355587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
