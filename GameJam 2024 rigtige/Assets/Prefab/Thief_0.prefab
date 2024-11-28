@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  anim: {fileID: 6913458730491992808}
 --- !u!50 &2438470598028110113
 Rigidbody2D:
   serializedVersion: 5

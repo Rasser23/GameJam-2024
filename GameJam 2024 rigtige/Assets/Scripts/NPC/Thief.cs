@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Thief : Enemy
 {
+    public Animator anim;
     private GameObject player;
     float distance;
     float detectRadius;
@@ -11,8 +12,10 @@ public class Thief : Enemy
     float damageSpeed;
     bool hittingPlayer = false;
     float hitTimer = 2f;
+    private bool movingRight = false;
     void Start()
     {
+
         moveSpeed = 100;
         health = 1;
         detectRadius = 5f;
@@ -29,8 +32,16 @@ public class Thief : Enemy
         {
             Vector2 direction = (player.transform.position - this.transform.position).normalized;
             rb.linearVelocity = direction * moveSpeed*Time.deltaTime;
-        } else
+            anim.SetBool("isWalking",true);
+
+            if ((transform.position.x > player.transform.position.x) && movingRight || (transform.position.x < player.transform.position.x) && !movingRight)
+            {
+                movingRight = !movingRight; // Flip direction
+                gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x,gameObject.transform.localScale.y, gameObject.transform.localScale.z);
+            }
+        } else if(anim.GetBool("isWalking") == true)
         {
+            anim.SetBool("isWalking", false);
             rb.linearVelocity = Vector2.zero;
         }
         if (hittingPlayer && hitTimer >= damageSpeed)
