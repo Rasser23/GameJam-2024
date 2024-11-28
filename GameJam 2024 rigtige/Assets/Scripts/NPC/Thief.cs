@@ -11,7 +11,8 @@ public class Thief : Enemy
     float damageSpeed;
     bool hittingPlayer = false;
     float hitTimer = 2f;
-    void Start()
+    
+     public override void OnStart()
     {
         moveSpeed = 100;
         health = 1;
@@ -36,7 +37,7 @@ public class Thief : Enemy
         if (hittingPlayer && hitTimer >= damageSpeed)
         {
             hitTimer = 0f;
-            Debug.Log("gives damage");
+             GiveDamage(1); // Deal 1 damage to the player
          } 
         else if (hitTimer<damageSpeed)
         {
