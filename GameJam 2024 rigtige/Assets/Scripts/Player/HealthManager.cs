@@ -27,6 +27,7 @@ public class HealthManager : MonoBehaviour
     {
         // Reduce health but not below 0
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, maxHealth);
+        Debug.Log($"Player took {damage} damage. Current health: {currentHealth}");
 
         // Update the heart sprite
         UpdateHeartSprite();
@@ -36,6 +37,7 @@ public class HealthManager : MonoBehaviour
     {
         // Increase health but not above maxHealth
         currentHealth = Mathf.Clamp(currentHealth + healAmount, 0, maxHealth);
+        Debug.Log($"Player healed {healAmount}. Current health: {currentHealth}");
 
         // Update the heart sprite
         UpdateHeartSprite();
