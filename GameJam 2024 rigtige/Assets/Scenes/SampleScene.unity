@@ -7191,7 +7191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  moveSpeed: 1
+  moveSpeed: 1.1
   detectionRadius: 5
   minimumDistance: 1.5
   firePoint: {fileID: 598418869594840961}
