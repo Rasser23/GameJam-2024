@@ -445,7 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa98c45780b381a48ab9d8d22c0f3699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 1
 --- !u!212 &69559240
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3370,17 +3370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70663b9a91a08ac4fa69386f47ce112d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartSprites:
-  - {fileID: 4432793351920879750, guid: b17bee984e79baf41b704154bdcdf1a9, type: 3}
-  - {fileID: 5642012044021194823, guid: b17bee984e79baf41b704154bdcdf1a9, type: 3}
-  - {fileID: 8124259339964715380, guid: b17bee984e79baf41b704154bdcdf1a9, type: 3}
-  - {fileID: 7685371531485235544, guid: b17bee984e79baf41b704154bdcdf1a9, type: 3}
-  - {fileID: 4160753575623616581, guid: b17bee984e79baf41b704154bdcdf1a9, type: 3}
-  - {fileID: 366615594880959974, guid: b17bee984e79baf41b704154bdcdf1a9, type: 3}
-  - {fileID: -35186699611894704, guid: b17bee984e79baf41b704154bdcdf1a9, type: 3}
-  heartImage: {fileID: 0}
-  currentHealth: 0
-  maxHealth: 6
 --- !u!1 &468444667
 GameObject:
   m_ObjectHideFlags: 0
