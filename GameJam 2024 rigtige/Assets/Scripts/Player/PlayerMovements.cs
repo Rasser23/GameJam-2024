@@ -9,6 +9,8 @@ public class PlayerMovements : MonoBehaviour
     private Rigidbody2D myBody;
     private Animator myAnimator;
     public Sword sword;
+    public int lvl = 0;
+    private bool movingRight = false;
 
     [SerializeField] private float speed = 2f; // Movement speed
 
@@ -17,6 +19,7 @@ public class PlayerMovements : MonoBehaviour
 
     private void Awake()
     {
+        sword.damage = -lvl;
         myBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myBody.interpolation = RigidbodyInterpolation2D.Interpolate; // Smooth movement
@@ -65,6 +68,24 @@ public class PlayerMovements : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             sword.GiveDamage();
+        }
+        if (lvl!=myAnimator.GetInteger("lvl") )
+        {
+            myAnimator.SetInteger("lvl", lvl);
+            sword.damage = -lvl;
+        }
+        if (lvl > 0 && (((movement.x > 0) && movingRight )||((movement.x < 0) && !movingRight)))
+        {
+            movingRight = !movingRight; // Flip direction
+            gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
+        }
+        
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.name == "SwordDoor" && lvl == 0)
+        {
+            lvl = 1;
         }
     }
 

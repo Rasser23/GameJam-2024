@@ -141,19 +141,19 @@ TextureImporter:
       name: Kopi af knight down_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 122
-        width: 23
-        height: 27
+        x: 0
+        y: 120
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: da2e1c4e4092ea140800000000000000
+      spriteID: f4729824b760042488460522c0bb4861
       internalID: 4732765359407489709
       vertices: []
       indices: 
@@ -163,19 +163,19 @@ TextureImporter:
       name: Kopi af knight down_1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 92
-        width: 23
-        height: 27
+        x: 0
+        y: 90
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4410fc8a53f795690800000000000000
+      spriteID: dd4837d73cd12f94ca1a9eefd2b735fc
       internalID: -7612913826650980028
       vertices: []
       indices: 
@@ -185,19 +185,19 @@ TextureImporter:
       name: Kopi af knight down_2
       rect:
         serializedVersion: 2
-        x: 8
-        y: 62
-        width: 20
-        height: 27
+        x: 0
+        y: 60
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e982c6045c32ad410800000000000000
+      spriteID: 0ffca8bf17b6d4745922086b4579e77c
       internalID: 1502552755777841310
       vertices: []
       indices: 
@@ -207,19 +207,19 @@ TextureImporter:
       name: Kopi af knight down_3
       rect:
         serializedVersion: 2
-        x: 4
-        y: 32
-        width: 23
-        height: 27
+        x: 0
+        y: 30
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4c107bc8c87109480800000000000000
+      spriteID: 41e8e163e43179f429324e3123bc468a
       internalID: -8894583371633065532
       vertices: []
       indices: 
@@ -229,19 +229,19 @@ TextureImporter:
       name: Kopi af knight down_4
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 23
-        height: 26
+        x: 0
+        y: 0
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a24bec18fdc5b4350800000000000000
+      spriteID: 4abe7866022aecb4bb2a14dd186c2b7c
       internalID: 6001993043426587690
       vertices: []
       indices: 
