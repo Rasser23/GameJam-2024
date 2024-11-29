@@ -68888,6 +68888,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3287370491296361972, guid: 51f0c934cf4cce14f8223499a4bdc7fb, type: 3}
+      propertyPath: health
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3287370491296361972, guid: 51f0c934cf4cce14f8223499a4bdc7fb, type: 3}
       propertyPath: firePoint
       value: 
       objectReference: {fileID: 598418869594840961}
