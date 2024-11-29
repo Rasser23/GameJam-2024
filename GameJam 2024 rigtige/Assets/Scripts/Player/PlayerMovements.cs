@@ -16,9 +16,11 @@ public class PlayerMovements : MonoBehaviour
 
     private Vector3 startingPosition; // Player's starting position
     public static PlayerMovements Instance; // Singleton instance
+    HealthManager healthManager;
 
     private void Awake()
     {
+        healthManager = GameObject.Find("Heart").GetComponent<HealthManager>();
         sword.damage = -lvl;
         myBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
@@ -87,10 +89,18 @@ public class PlayerMovements : MonoBehaviour
         {
             lvl = 1;
         }
+    
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.name == "HealthDoor")
+        {
+            healthManager.currentHealth = healthManager.maxHealth;
+            healthManager.UpdateHeartSprite();
+        }
     }
 
-
-    public void ResetPosition()
+        public void ResetPosition()
     {
         // Reset the player's position and stop movement
         transform.position = startingPosition;

@@ -6,7 +6,7 @@ public class HealthManager : MonoBehaviour
 {
     public Sprite[] heartSprites; // Array of heart sprites
     private Image heartImage;
-    private int currentHealth;
+    public int currentHealth;
     public int maxHealth = 6;
 
     [Header("Game Over UI")]
@@ -64,7 +64,7 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    private void UpdateHeartSprite()
+    public void UpdateHeartSprite()
     {
         // Update UI sprite logic
         int spriteIndex = maxHealth - currentHealth;
