@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 0d372611062275b47993d366a6dd96c6
+guid: d45d041604eec1349b79a597cf447d5c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5547757323249699938
-    second: "Tr\xE6kvogn_0"
+      213: 8113733890396793808
+    second: Attack animation_0
+  - first:
+      213: 3743144347002457444
+    second: Attack animation_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,40 +99,93 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Tr\xE6kvogn_0"
+      name: Attack animation_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 28
-        width: 39
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 24
+        width: 25
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 1.0044051}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 26cce5864e79dfc40800000000000000
-      internalID: 5547757323249699938
+      spriteID: f21c37f4f1a783b4fade533491022018
+      internalID: 8113733890396793808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack animation_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 24
+        width: 25
+        height: 24
+      alignment: 9
+      pivot: {x: 0.49549544, y: 1.0137895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a5ec8e51e69b64396eead5b8cfd4cf
+      internalID: 3743144347002457444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack animation_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 25
+        height: 24
+      alignment: 9
+      pivot: {x: 0.49509013, y: 0.9935429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b4e84d75c910a44a4c03c7c6ab0074
+      internalID: -1106511988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack animation_3
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 25
+        height: 24
+      alignment: 9
+      pivot: {x: 0.4926352, y: 0.9986574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80863e25a9676dc4daf782daac795a5f
+      internalID: -1774466063
       vertices: []
       indices: 
       edges: []
@@ -138,7 +194,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2defbfe9ffad5ca4db776a09f37bee3d
+    spriteID: e5a4b051dbeab5d43861d769928c0a7d
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +204,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Tr\xE6kvogn_0": 5547757323249699938
+      Attack animation_0: 8113733890396793808
+      Attack animation_1: 3743144347002457444
+      Attack animation_2: -1106511988
+      Attack animation_3: -1774466063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

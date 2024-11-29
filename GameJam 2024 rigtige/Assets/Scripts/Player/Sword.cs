@@ -6,10 +6,11 @@ public class Sword : MonoBehaviour
     public int damage;
     List<Enemy> enemysList = new List<Enemy>();
     public float angle;
-
+    private Animator slayAnimator;
     public Animator animator;
     void Start()
     {
+        slayAnimator = GetComponent<Animator>();
     }
 
     void Update()
@@ -31,9 +32,9 @@ public class Sword : MonoBehaviour
     }
     public void GiveDamage()
     {
+        slayAnimator.SetTrigger("Slay");
         foreach (Enemy enemy in enemysList)
         {
-
             enemy.TakeDamage(damage);
         }
     }
