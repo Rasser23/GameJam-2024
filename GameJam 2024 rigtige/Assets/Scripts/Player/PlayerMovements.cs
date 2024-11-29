@@ -83,17 +83,14 @@ public class PlayerMovements : MonoBehaviour
         }
         
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+  
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.collider.gameObject.name == "SwordDoor" && lvl == 0)
+        if (other.gameObject.name == "SwordDoor" && lvl == 0)
         {
             lvl = 1;
         }
-    
-    }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.name == "HealthDoor")
+        else if (other.gameObject.name == "HealthDoor")
         {
             healthManager.currentHealth = healthManager.maxHealth;
             healthManager.UpdateHeartSprite();
