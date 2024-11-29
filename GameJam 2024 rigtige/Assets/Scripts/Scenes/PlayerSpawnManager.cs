@@ -3,11 +3,14 @@ using UnityEngine;
 public class PlayerSpawnManager : MonoBehaviour
 {
     public GameObject playerPrefab; // Assign the player prefab in the Inspector
+    public Vector3 defaultSpawnPosition; // Default position if no spawn is set
 
     private void Start()
     {
-        // Get the stored spawn position
-        Vector3 spawnPosition = SceneTransitionManager.Instance.spawnPosition;
+        // Determine the spawn position: use saved spawn position or default
+        Vector3 spawnPosition = SceneTransitionManager.Instance != null
+            ? SceneTransitionManager.Instance.spawnPosition
+            : defaultSpawnPosition;
 
         // Check if a player already exists
         GameObject existingPlayer = GameObject.FindGameObjectWithTag("Player");
