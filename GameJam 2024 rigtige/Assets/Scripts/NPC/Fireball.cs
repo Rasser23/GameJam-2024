@@ -8,6 +8,7 @@ public class Fireball : MonoBehaviour
     private float timeExistet = 0f;
     private HealthManager healthManager; // Reference to HPmanager
     float angle;
+    bool hit = false;
     void Start()
     {
         moveSpeed = 200f;
@@ -34,12 +35,14 @@ public class Fireball : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !hit)
         {
             if (healthManager != null)
             {
                 healthManager.TakeDamage(1); // Reduce health by 1
+                hit = true;
                 DestroyObj(); // Destroy the fireball
+               
             }
             else
             {
