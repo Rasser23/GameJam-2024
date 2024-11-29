@@ -2875,7 +2875,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -5046,10 +5046,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -6577,6 +6577,7 @@ GameObject:
   - component: {fileID: 695674690}
   - component: {fileID: 695674689}
   - component: {fileID: 695674691}
+  - component: {fileID: 695674692}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -6627,6 +6628,20 @@ MonoBehaviour:
   dialogueUI: {fileID: 1872368763}
   npcNameText: {fileID: 503248077}
   dialogueText: {fileID: 600618798}
+--- !u!114 &695674692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695674688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8878b09188d693499ca82b872236834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 2979502030211468806, guid: 7af4ff589ca90d54db10fc896727265a, type: 3}
+  defaultSpawnPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &696139703
 GameObject:
   m_ObjectHideFlags: 0
@@ -7071,7 +7086,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16688,7 +16703,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -69015,11 +69030,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 499216536012230277, guid: 7af4ff589ca90d54db10fc896727265a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 23.9
       objectReference: {fileID: 0}
     - target: {fileID: 499216536012230277, guid: 7af4ff589ca90d54db10fc896727265a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -23.79
       objectReference: {fileID: 0}
     - target: {fileID: 499216536012230277, guid: 7af4ff589ca90d54db10fc896727265a, type: 3}
       propertyPath: m_LocalPosition.z
